@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      .v-counter {
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        color: #666666;
+        box-shadow: 0px 0px 9px #00000066;
+        text-align: center;
+      }
+      .v-counter .v-text {
+        font-size: 28px;
+        font-weight: bolder;
+      }
+      .v-counter .v-btn {
+        font-size: 20px;
+        padding: 0 10px;
+        height: 32px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="https://unpkg.com/vue@3.2.37/dist/vue.runtime.global.js" ></script>
+    <!-- <script src="./node_modules/vue/dist/vue.runtime.global.js" ></script> -->
+  </head>
+
+  <body>
+    <div id="app"></div>
+  </body>
+
+  <script >
+    (function() {
+      const { 
+        createVNode, createElementVNode,
+        createApp, ref, toDisplayString
+      } = window.Vue;
+    
+      const Counter = {
+        setup() {
+          const num = ref(0)
+          const click = () => {
+            num.value += 1;
+          }
+          return (_ctx, _cache) => {
+            return (
+              createElementVNode('div', { class: 'v-counter' }, [
+                createElementVNode('div', { class: 'v-text' }, toDisplayString(num.value)),
+                createElementVNode("button", { class: 'v-btn', onClick: click }, "点击加1")
+              ])
+            )
+          }
+        }
+      }
+
+      // 组件挂载渲染
+      const app = createApp({
+        render() {
+          return  createVNode(Counter)
+        }
+      });
+      app.mount('#app')
+    })();
+  </script>
+
+</html>
