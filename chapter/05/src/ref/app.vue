@@ -1,17 +1,15 @@
 <template>
   <div class="app">
-    <div class="text">Count: {{state.count}}</div>
+    <div class="text">Count: {{count}}</div>
     <button class="btn" @click="onClick">Add</button>
   </div>
 </template>
 
 <script setup>
-  import { reactive } from 'vue';
-  const state = reactive({
-    count: 0
-  });
+  import { ref } from 'vue';
+  const count = ref(0);
   const onClick = () => {
-    state.count ++;
+    count.value ++;
   }
 </script>
 
