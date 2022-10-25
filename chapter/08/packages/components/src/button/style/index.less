@@ -1,0 +1,22 @@
+@import '../../theme/variable.less';
+
+.@{prefix-name}-button {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background: ~'var(--@{prefix-name}-btn-primary-bg-color)';
+  color: ~'var(--@{prefix-name}-btn-primary-color)';
+  border: 1px solid ~'var(--@{prefix-name}-btn-primary-border-color)';
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background: ~'var(--@{prefix-name}-btn-primary-bg-color-hover)';
+    color: ~'var(--@{prefix-name}-btn-primary-color-hover)';
+    border: 1px solid ~'var(--@{prefix-name}-btn-primary-border-color-hover)';
+  }
+}
