@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.web.json",
+  "exclude": [
+    "packages/**/*.vue",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.js",
+    "packages/**/*.jsx"
+  ]
+}
