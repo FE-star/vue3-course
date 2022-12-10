@@ -2,7 +2,7 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "target": "ES6",
-    "module": "commonjs",
+    "module": "NodeNext",
     "moduleResolution": "Node",
     "strict": true,
     "jsx": "preserve",
@@ -14,8 +14,12 @@
     "allowJs": true
   },
   "include": [
+    "env.d.ts",
     "scripts",
+    "packages/work-server/src/lib.d.ts",
     "packages/work-server/src/",
+    "packages/init-database/src/",
+    "packages/init-database/demos/"
   ],
   "exclude": [
     "node_modules"
