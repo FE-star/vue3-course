@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ES6", "DOM"],
+    "importHelpers": true,
+    "allowJs": true
+  },
+  "include": [
+    "scripts",
+    "packages/work-server/src/",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
