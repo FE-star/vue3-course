@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ES6", "DOM"],
+    "importHelpers": true,
+    "allowJs": true
+  },
+  "include": [
+    "env.d.ts",
+    "scripts",
+    "packages/work-server/src/lib.d.ts",
+    "packages/work-server/src/",
+    "packages/init-database/src/",
+    "packages/init-database/demos/"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
