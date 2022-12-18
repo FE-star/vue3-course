@@ -1,0 +1,52 @@
+INSERT INTO material_snapshot
+  (version, user_uuid, material_uuid, material_data, status, extend )
+VALUES 
+  (
+    '0.1.0',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0001',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0001',
+    '{"a":123}',
+    1,
+    '{}'
+  ),
+    (
+    '0.2.0',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0001',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0001',
+    '{"a":123}',
+    1,
+    '{}'
+  ),
+  (
+    '1.2.0',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0002',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0001',
+    '{"a":123}',
+    1,
+    '{}'
+  ),
+  (
+    '1.2.1',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0002',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0001',
+    '{"a":123}',
+    1,
+    '{}'
+  ),
+  (
+    '3.2.1',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0001',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0002',
+    '{"a":123}',
+    1,
+    '{}'
+  ),
+  (
+    '4.3.2',
+    '00000000-aaaa-bbbb-cccc-ddddeeee0001',
+    '11110000-aaaa-bbbb-cccc-ddddeeee0002',
+    '{"a":123}',
+    1,
+    '{}'
+  )
+;
