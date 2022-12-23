@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`Box > snapshot 1`] = `
+"<div class=\\"my-vue-box\\">
+  <div class=\\"hello\\">Hello World</div>
+</div>"
+`;

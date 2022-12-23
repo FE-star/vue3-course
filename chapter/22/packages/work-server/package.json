@@ -1,0 +1,31 @@
+{
+  "name": "@my/work-server",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@my/work-front": "^0.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.18.1",
+    "vue": "^3.2.39"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/koa": "^2.13.5",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-mount": "^4.0.2",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa__router": "^12.0.0",
+    "@types/md5": "^2.3.2",
+    "@types/mysql": "^2.15.21",
+    "@types/uuid": "^9.0.0",
+    "md5": "^2.3.0",
+    "uuid": "^9.0.0"
+  }
+}

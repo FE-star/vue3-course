@@ -1,0 +1,13 @@
+{
+  "name": "@my/material-banner-slides",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^3.2.45",
+    "@my/components": "*"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.45",
+    "@my/components": "*"
+  }
+}
