@@ -16,7 +16,7 @@ async function loadESModule(name: string) {
   );
 }
 
-async function main() {
+async function runtime() {
   const moduleMap: any = {};
   for (const item of layout.materials) {
     const { name, version } = item;
@@ -32,4 +32,4 @@ async function main() {
   await render({ Vue, moduleMap, layout });
 }
 
-main();
+runtime();

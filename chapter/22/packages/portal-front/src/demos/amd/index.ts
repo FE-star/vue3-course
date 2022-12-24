@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 import { CDN_BASE_URL, render, loadMaterialStyle, layout } from '../util';
 
-async function main() {
+async function runtime() {
   const paths: Record<string, string> = {};
   layout.materials.forEach((m) => {
     paths[m.name] = `material/${m.name}/${m.version}/index.amd`;
@@ -30,4 +30,4 @@ async function main() {
   );
 }
 
-main();
+runtime();

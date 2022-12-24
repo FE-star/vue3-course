@@ -8,7 +8,7 @@ import {
   loadScript
 } from '../util';
 
-async function main() {
+async function runtime() {
   const moduleMap: any = {};
   for (const item of layout.materials) {
     const { name, version, globalName } = item;
@@ -16,7 +16,6 @@ async function main() {
       `${CDN_BASE_URL}/material/${name}/${version}/index.iife.js`
     );
     await loadMaterialStyle({ name, version });
-    console.log('name ===', name);
     // @ts-ignore
     moduleMap[name] = window[globalName] as any;
   }
@@ -25,4 +24,4 @@ async function main() {
   await render({ Vue, moduleMap, layout });
 }
 
-main();
+runtime();
