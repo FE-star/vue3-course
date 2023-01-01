@@ -1,4 +1,4 @@
-# 第23课
+# 第24课
 
 ## 第一步 安装依赖
 
@@ -25,10 +25,12 @@ npm run dev:work-front
 
 # 启动后台-后端开发模式
 npm run dev:work-server
+
 ```
 
 ## 第四步 访问页面
 
 - 先登录 [http://127.0.0.1:8002/page/sign-in](http://127.0.0.1:8002/page/sign-in)
 - 再访问物料管理页面 [http://127.0.0.1:8002/page/manage/material-list](http://127.0.0.1:8002/page/manage/material-list)
+- 最后访问单独某个物料，点击“预览按钮”
 

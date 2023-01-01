@@ -1,0 +1,20 @@
+@import '../../theme/variable.less';
+
+.generate-col(@num) {
+  &.@{prefix-name}-col-@{num} {
+    width: percentage((1 / 24 * @num));
+    flex: 0 0 percentage((1 / 24 * @num));
+  }
+}
+
+.generate-col-list(@count) when (@count > 0) {
+  .generate-col-list((@count - 1));
+  .generate-col(@count);
+}
+
+.@{prefix-name}-col {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  .generate-col-list(24);
+}
