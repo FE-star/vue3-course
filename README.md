@@ -1,6 +1,6 @@
 # Vue 3 企业级项目实战课（代码案例）
 
-[极客时间专栏 Vue 3 企业级项目实战课](https://time.geekbang.com/column/intro/100311101)
+[极客时间专栏 《Vue 3 企业级项目实战课》](https://time.geekbang.com/column/intro/100311101)
 
 - 从 0 到 1 实现一个运营搭建平台
 - 掌握 Webpack、Rollup、Vite 三大前端构建工具
