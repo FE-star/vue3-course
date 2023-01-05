@@ -33,7 +33,7 @@ npm run dev:work-server
 ### 第四步 访问页面
 
 - 先登录 [http://127.0.0.1:8002/page/sign-in](http://127.0.0.1:8002/page/sign-in)
-- 再访问物页面搭建功能 [http://127.0.0.1:8002/page/page](http://127.0.0.1:8002/page/manage/page)
+- 再访问物页面搭建功能 [http://127.0.0.1:8002/page/manage/page](http://127.0.0.1:8002/page/manage/page)
 
 
 ## 生产模式
@@ -59,7 +59,7 @@ npm run start:work
 ### 第三步 访问生产模式页面
 
 - 生产模式登录 [http://127.0.0.1:8001/page/sign-in](http://127.0.0.1:8001/page/sign-in)
-- 生产模式页面搭建功能 [http://127.0.0.1:8001/page/page](http://127.0.0.1:8001/page/manage/page)
+- 生产模式页面搭建功能 [http://127.0.0.1:8001/page/manage/page](http://127.0.0.1:8001/page/manage/page)
 
 
 ## 其他
