@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    .drag-layout {
+      display: block;
+      width: 400px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #999999;
+    }
+    .drag-item {
+      height: 40px;
+      border: 1px solid #cccccc;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .drag-item.active {
+      opacity: 0.4;
+    }
+/*     
+    .drag-layout.horizontal {
+      flex-direction: row;
+      display: flex;
+    }
+    .drag-layout.horizontal .drag-item {
+      width: 100px;
+    } */
+
+  </style>
+  <body>
+    <div class="drag-layout horizontal">
+      <div draggable="true" class="drag-item" style="background: #00bcd4;">
+        模块1
+      </div>
+      <div draggable="true" class="drag-item" style="background: #8bc34a;">
+        模块2
+      </div>
+      <div draggable="true" class="drag-item" style="background: #ffeb3b;">
+        模块3
+      </div>
+      <div draggable="true" class="drag-item" style="background: #ff5722;">
+        模块4
+      </div>
+    </div>
+    <script type="module" src="./drag-demo.js"></script>
+  </body>
+</html>
