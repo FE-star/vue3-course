@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html,body { margin: 0; padding: 0 }
+      #links {
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+        flex-direction: row;
+        display: flex;
+        background: #3b889f;
+      }
+      #links li a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      #links li a.active {
+        background: #ffffff;
+        color: #3b889f;
+      }
+      #view {
+        padding: 20px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="links"></ul>
+    <div id="view"></div>
+    <script type="module" src="./spa-hash-router.js"></script>
+  </body>
+</html>

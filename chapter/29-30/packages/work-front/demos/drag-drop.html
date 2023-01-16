@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf8" />
+    <style>
+      .area {
+        width: 400px; height: 80px; background: #f0f0f0; border: 1px solid #e7e2e2;
+      }
+      .area-target {
+        background: #f0a49e; 
+      }
+      .module {
+        width: 100px; height: 40px; background: #bddef9; border: 1px solid #222222;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="area">
+      <div>原始区域</div>
+      <div id="module" draggable="true" ondragstart="dragModuleStart(event)" class="module">
+        可拖放模块
+      </div>
+    </div>
+
+    <div id="target-area" ondrop="dropArea(event)" ondragover="dragOverArea(event)" class="area area-target">
+      <div>目标区域</div>
+      <!-- 模块可以拖方这里 -->
+    </div>
+
+  </body>
+  <script>
+    function dragModuleStart(event) {
+      // 将拖拽模块元素的 id 添加到数据传输对象
+      event.dataTransfer.setData("application/my-app", event.target.id);
+      event.dataTransfer.dropEffect = "move";
+    }
+    function dragOverArea(event) {
+      // 处理拖拽模块到目标区域时候，目标区域的拖拽悬浮事件
+      event.preventDefault();
+      event.dataTransfer.dropEffect = "move"
+    }
+    function dropArea(event) {
+      event.preventDefault();
+      // 获取拖放模块的id， 并将移动的元素添加到目标的 DOM
+      const data = event.dataTransfer.getData("application/my-app");
+      event.target.appendChild(document.getElementById(data));
+    }
+  </script>
+    
+</html>
