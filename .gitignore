@@ -27,3 +27,5 @@ coverage
 *.sln
 *.sw?
 pnpm-lock.yaml
+
+__snapshots__
