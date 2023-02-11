@@ -1,0 +1,16 @@
+{
+  "name": "@my/mock-logger",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {},
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "requirejs": "2.3.6",
+    "vue": "3.2.45",
+    "vue-router": "4.1.6"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
