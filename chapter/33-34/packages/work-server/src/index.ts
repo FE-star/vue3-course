@@ -7,8 +7,11 @@ import koaBodyParser from 'koa-bodyparser';
 import routers from './router';
 import { getServerDir } from './util/file';
 import { syncFileFromCDN } from './middleware/sync-cdn';
+import { record } from './middleware/record';
 
 const app = new Koa();
+
+app.use(record);
 
 const publicDirPath = path.join(getServerDir(), 'public');
 app.use(koaBodyParser());
